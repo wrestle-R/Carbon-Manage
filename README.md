@@ -1,4 +1,4 @@
-# 🌱 Carbon Company Showcase
+# 🌱 Carbon Manage Showcase
 
 Welcome to the Carbon Company Showcase!  
 This project highlights forward-thinking companies using Carbon technology to make a positive environmental impact.
@@ -11,11 +11,6 @@ This project highlights forward-thinking companies using Carbon technology to ma
   Responsive, accessible, and visually engaging design.
 - **Easy Customization:**  
   Add or update company names in a single array.
-
-## 🖥️ Preview
-
-![Company Showcase Screenshot](./screenshot.png)  
-*Trusted by forward-thinking teams.*
 
 ## 🛠️ Tech Stack
 
@@ -45,15 +40,6 @@ This project highlights forward-thinking companies using Carbon technology to ma
 4. **Open in your browser:**  
    Visit [http://localhost:5173](http://localhost:5173)
 
-## ✨ Customization
 
-- To update the showcased companies, edit the `companies` array in  
-  `src/pages/MeetCurrentUsers.jsx`.
-
-## 📄 License
-
-MIT
-
----
 
 *Made with 💙 for a greener future.*
