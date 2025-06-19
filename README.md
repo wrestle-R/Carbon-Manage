@@ -1,12 +1,59 @@
-# React + Vite
+# 🌱 Carbon Company Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Carbon Company Showcase!  
+This project highlights forward-thinking companies using Carbon technology to make a positive environmental impact.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Animated Company Showcase:**  
+  A beautiful, animated grid cycling through innovative companies, built with React and Framer Motion.
+- **Modern UI:**  
+  Responsive, accessible, and visually engaging design.
+- **Easy Customization:**  
+  Add or update company names in a single array.
 
-## Expanding the ESLint configuration
+## 🖥️ Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Company Showcase Screenshot](./screenshot.png)  
+*Trusted by forward-thinking teams.*
+
+## 🛠️ Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Tailwind CSS](https://tailwindcss.com/) (for styling)
+
+## 📦 Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/carbon-showcase.git
+   cd carbon-showcase
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in your browser:**  
+   Visit [http://localhost:5173](http://localhost:5173)
+
+## ✨ Customization
+
+- To update the showcased companies, edit the `companies` array in  
+  `src/pages/MeetCurrentUsers.jsx`.
+
+## 📄 License
+
+MIT
+
+---
+
+*Made with 💙 for a greener future.*

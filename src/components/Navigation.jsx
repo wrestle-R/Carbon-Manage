@@ -23,7 +23,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="text-2xl font-mono font-bold text-white tracking-wider">
-            CARBON
+            CARBON MANAGE
           </Link>
 
           {/* Navigation Links */}

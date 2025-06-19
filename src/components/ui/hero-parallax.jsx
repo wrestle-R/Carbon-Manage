@@ -72,7 +72,7 @@ export const Header = () => {
           textShadow: '0 0 30px rgba(255,255,255,0.3)'
         }}
       >
-        CARBON <br /> 
+        CARBON MANAGE <br /> 
         <span className="text-gray-400">SOLUTIONS</span>
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-gray-300 font-light tracking-wide leading-relaxed">
