@@ -32,7 +32,8 @@ const EmissionsTab = () => {
   };
 
   return (
-    <div className="relative rounded-3xl p-8 border border-blue-400/20 bg-white/10 backdrop-blur-xl shadow-2xl overflow-hidden animate-fade-in-up">
+    <div className="relative rounded-3xl p-8 pb-10 mb-10 border border-blue-400/20 shadow-2xl overflow-hidden animate-fade-in-up"
+      style={{ minHeight: 420, maxHeight: 480, height: 440 }}>
       {/* Glowing background shapes */}
       <div className="pointer-events-none absolute inset-0 z-0">
         <div className="absolute top-10 left-10 w-40 h-40 bg-blue-400/10 rounded-full blur-2xl animate-pulse"></div>
@@ -76,8 +77,9 @@ const EmissionsTab = () => {
       </div>
 
       {/* Chart */}
-      <div className="relative rounded-2xl p-6 border border-blue-400/10 bg-white/5 backdrop-blur-xl shadow-xl overflow-x-auto">
-        <div className="h-64 flex items-end justify-between space-x-4">
+      <div className="relative rounded-2xl p-6 border border-blue-400/10 bg-white/5 backdrop-blur-xl shadow-xl"
+        style={{ minHeight: 220, maxHeight: 240, height: 230, overflow: 'visible' }}>
+        <div className="h-40 flex items-end justify-between space-x-4">
           {getFilteredData().map((data, index) => (
             <motion.div
               key={data.year}

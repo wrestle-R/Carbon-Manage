@@ -41,7 +41,10 @@ const AIRecommendationsTab = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+    <div
+      className="rounded-2xl p-8 border border-gray-800 bg-gray-900 flex flex-col"
+      style={{ minHeight: 420, maxHeight: 480, height: 440, overflow: 'hidden' }}
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

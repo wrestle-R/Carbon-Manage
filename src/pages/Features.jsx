@@ -61,7 +61,7 @@ const Features = () => {
   };
 
   return (
-    <section className="relative py-20 px-6 min-h-screen overflow-hidden" style={{background: 'linear-gradient(135deg, #000 0%, #222 100%)'}}>
+    <section className="relative py-20 px-6 min-h-screen bg-black " >
       {/* Floating shapes/particles */}
       <div className="pointer-events-none absolute inset-0 z-0">
         <div className="absolute top-10 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse"></div>

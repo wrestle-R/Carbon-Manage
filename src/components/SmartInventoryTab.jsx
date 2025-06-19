@@ -37,7 +37,10 @@ const SmartInventoryTab = () => {
   const totalCarbonImpact = inventoryItems.reduce((sum, item) => sum + item.carbonImpact, 0);
 
   return (
-    <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+    <div
+      className="bg-gray-900 rounded-2xl p-8 border border-gray-800 flex flex-col"
+      style={{ minHeight: 420, maxHeight: 480, height: 440, overflow: 'hidden' }}
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -85,7 +88,10 @@ const SmartInventoryTab = () => {
       </motion.div>
 
       {/* Inventory Grid */}
-      <div className="grid md:grid-cols-2 gap-6 mb-8">
+      <div
+        className="grid md:grid-cols-2 gap-6 mb-8 flex-grow"
+        style={{ maxHeight: 180, overflow: 'hidden' }}
+      >
         {inventoryItems.map((item, index) => (
           <motion.div
             key={item.id}
@@ -151,6 +157,7 @@ const SmartInventoryTab = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         className="grid md:grid-cols-3 gap-6"
+        style={{ maxHeight: 120, overflow: 'hidden' }}
       >
         {[
           {
