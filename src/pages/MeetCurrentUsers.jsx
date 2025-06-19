@@ -101,7 +101,7 @@ const CompanyShowcase = () => {
   };
 
   return (
-    <div className="relative min-h-[60vh] pt-32 bg-black flex items-center justify-center p-8 overflow-hidden">
+    <div className="relative min-h-screen bg-black flex items-center justify-center p-0 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-radial from-gray-900/20 via-black to-black" />
       
@@ -193,4 +193,3 @@ const CompanyShowcase = () => {
 };
 
 export default CompanyShowcase;
-                  

@@ -6,7 +6,15 @@ const TestimonialCard = ({ testimonial, index }) => {
       initial={{ x: 100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ delay: index * 0.5, duration: 0.8, ease: "easeOut" }}
-      className="bg-white rounded-2xl p-8 shadow-2xl border-l-4 border-blue-500 min-w-[500px] max-w-[500px]"
+      whileHover={{
+        scale: 1.04,
+        boxShadow: "0 8px 32px 0 rgba(0, 118, 255, 0.25)",
+        borderColor: "#7dd3fc"
+      }}
+      className="bg-white rounded-2xl p-8 shadow-2xl border-l-8 border-gradient-to-b from-blue-400 via-cyan-400 to-blue-600 min-w-[320px] max-w-[420px] sm:min-w-[400px] sm:max-w-[500px] transition-all duration-300"
+      style={{
+        borderImage: "linear-gradient(to bottom, #3b82f6, #06b6d4, #2563eb) 1"
+      }}
     >
       <div className="mb-6">
         <p className="text-gray-800 text-lg leading-relaxed italic">
@@ -15,7 +23,7 @@ const TestimonialCard = ({ testimonial, index }) => {
       </div>
       
       <div className="flex items-center gap-4">
-        <div className="w-16 h-16 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+        <div className="w-16 h-16 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center shadow-lg">
           <img
             src={testimonial.image}
             alt={testimonial.name}
