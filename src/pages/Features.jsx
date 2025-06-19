@@ -61,27 +61,27 @@ const Features = () => {
   };
 
   return (
-    <section className="relative py-20 px-6 min-h-screen overflow-hidden" style={{background: 'linear-gradient(135deg, #0f2027 0%, #1e3a8a 100%)'}}>
+    <section className="relative py-20 px-6 min-h-screen overflow-hidden" style={{background: 'linear-gradient(135deg, #000 0%, #222 100%)'}}>
       {/* Floating shapes/particles */}
       <div className="pointer-events-none absolute inset-0 z-0">
-        <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-700/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 left-1/2 w-48 h-48 bg-blue-400/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '4s', transform: 'translate(-50%, -50%)'}}></div>
+        <div className="absolute top-10 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/2 left-1/2 w-48 h-48 bg-white/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '4s', transform: 'translate(-50%, -50%)'}}></div>
       </div>
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <motion.h2 
-            className="text-5xl font-extrabold mb-6 bg-gradient-to-r from-blue-400 via-white to-blue-700 bg-clip-text text-transparent animate-gradient bg-300% drop-shadow-lg"
+            className="text-5xl font-extrabold mb-6 bg-gradient-to-r from-white via-gray-400 to-black bg-clip-text text-transparent animate-gradient bg-300% drop-shadow-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             Why Choose{' '}
-            <span className="bg-gradient-to-r from-blue-400 via-white to-blue-700 bg-clip-text text-transparent animate-gradient bg-300%">Carbon Manage</span>?
+            <span className="bg-gradient-to-r from-white via-gray-400 to-black bg-clip-text text-transparent animate-gradient bg-300%">Carbon Manage</span>?
           </motion.h2>
           <motion.p 
-            className="text-xl text-blue-100 max-w-3xl mx-auto drop-shadow-md"
+            className="text-xl text-gray-200 max-w-3xl mx-auto drop-shadow-md"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -93,9 +93,9 @@ const Features = () => {
 
         {/* Tab Navigation */}
         <div className="flex justify-center mb-12">
-          <div className="flex space-x-3 bg-white/10 backdrop-blur-xl rounded-2xl p-3 border border-blue-400/30 shadow-2xl relative overflow-hidden" style={{boxShadow: '0 8px 32px 0 rgba(30, 64, 175, 0.18)'}}>
+          <div className="flex space-x-3 bg-white/5 backdrop-blur-xl rounded-2xl p-3 border border-white/20 shadow-2xl relative overflow-hidden" style={{boxShadow: '0 8px 32px 0 rgba(0,0,0,0.18)'}}>
             {/* Glowing border */}
-            <div className="absolute inset-0 rounded-2xl border-2 border-blue-400/20 pointer-events-none animate-pulse-border"></div>
+            <div className="absolute inset-0 rounded-2xl border-2 border-white/10 pointer-events-none animate-pulse-border"></div>
             {TABS.map((tab, index) => (
               <Tab
                 key={tab.id}
@@ -120,7 +120,7 @@ const Features = () => {
               transition={{ duration: 0.3 }}
               className="absolute inset-0"
             >
-              <div className="rounded-3xl bg-white/10 backdrop-blur-xl border border-blue-400/20 shadow-2xl p-8 min-h-[600px] flex flex-col justify-center animate-fade-in-up">
+              <div className="rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl p-8 min-h-[600px] flex flex-col justify-center animate-fade-in-up">
                 {renderTabContent()}
               </div>
             </motion.div>
@@ -147,10 +147,10 @@ const Features = () => {
         }
         @keyframes pulse-border {
           0%, 100% {
-            border-color: rgba(59,130,246,0.2);
+            border-color: rgba(255,255,255,0.1);
           }
           50% {
-            border-color: rgba(30,64,175,0.5);
+            border-color: rgba(255,255,255,0.3);
           }
         }
         .animate-fade-in-up {
